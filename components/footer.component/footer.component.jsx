@@ -10,9 +10,9 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by{' '}
+        Lic. Romina Gambino{' '}
         <span className={styles.logo}>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <Image src="/img/psicologia.png" alt="psicologia Logo" width={30} height={20} />
         </span>
       </a>
     </footer>
