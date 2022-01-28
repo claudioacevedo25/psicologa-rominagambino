@@ -2,6 +2,7 @@ import React from "react";
 import ResponsiveAppBar from "../appbar.component";
 import Footer from "../footer.component";
 import Head from "next/head";
+import style from './defaultLayout.module.css';
 
 const DefaultLayout = ({ children }) => {
     return (
@@ -12,7 +13,7 @@ const DefaultLayout = ({ children }) => {
                 <link rel="icon" href="img/psicologia.png" />
             </Head>
             <ResponsiveAppBar />
-            <main>{children}</main>
+            <main className={style.container}>{children}</main>
             <Footer />
         </>
     );
