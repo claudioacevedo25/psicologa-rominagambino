@@ -54,7 +54,7 @@ const ResponsiveAppBar = () => {
             onClick={goHome}
             sx={{display: 'block' }}
           >
-            <Image src={'/img/hands.png'} alt='psicologia' width={50} height={50}  />
+            <Image src={'/img/goldTree.png'} alt='psicologia' width={50} height={50}  />
 
           </Button>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
