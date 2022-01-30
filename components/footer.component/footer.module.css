@@ -8,7 +8,7 @@
   background: linear-gradient(90deg, rgba(255, 0, 0, 0.6404761733795081) 0%, rgba(255, 205, 71, 0.856162447889312) 33%, rgba(255, 236, 204, 0.8813725319229254) 100%);
 }
 
-.container > a:hover {
+.container > p:hover {
   font-weight: 600;
 }
 
@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-.address:hover{
+.address>p:hover{
   font-weight: 600;
 }
 

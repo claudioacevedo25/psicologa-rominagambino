@@ -2,18 +2,13 @@ import React from 'react';
 import SocialMedia from './socialMedia';
 import Address from './address';
 import styles from './footer.module.css';
+import { Typography } from '@mui/material';
 
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {`Lic. Romina Gambino`}
-      </a>
-      <Address/>
+      <Typography variant='h5'> {`Lic. Romina Gambino`} </Typography>
+      <Address />
       <SocialMedia />
     </footer>
   )

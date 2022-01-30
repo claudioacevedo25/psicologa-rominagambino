@@ -104,7 +104,7 @@ const ResponsiveAppBar = () => {
                 onClick={() => onPageChange(page.url)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page.name}
+                <Typography variant='h5'>{page.name}</Typography>
               </Button>
             ))}
           </Box>

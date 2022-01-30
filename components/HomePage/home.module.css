@@ -14,10 +14,12 @@
 }
 
 .content {
-    padding: 0 10px;
+    padding: 0 25px;
     display: flex;
     align-content: center;
     justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 @media(min-width: 700px){

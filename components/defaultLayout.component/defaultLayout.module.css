@@ -6,4 +6,5 @@
 }
 
 .mainContainer {
+    display: flex;
 }

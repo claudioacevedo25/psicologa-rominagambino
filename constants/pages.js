@@ -12,7 +12,7 @@ export const pages = [
         url: 'psicodatos',
     },
     {
-        name: 'Modalidad de Atención',
+        name: 'Modalidad de Atencion',
         url: 'modalidad-atencion',
     },
     {
