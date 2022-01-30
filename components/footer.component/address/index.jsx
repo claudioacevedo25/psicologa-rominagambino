@@ -9,7 +9,7 @@ const Address = () => {
             <Link href={'https://goo.gl/maps/wjXhUPbyiVfo5D467'} >
                 <a target='_blank' className={style.address}>
                     <LocationOnIcon />
-                    <Typography variant='h5'>{`9 de Julio 368, Villa Carlos Paz - Cordoba`}</Typography>
+                    <Typography component={'p'}>{`9 de Julio 368, Villa Carlos Paz - Córdoba`}</Typography>
                 </a>
             </Link>
         </div>

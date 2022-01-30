@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import DefaultLayout from "../components/defaultLayout.component";
 import '../styles/globals.css';
 
-const font = "'Dongle', sans-serif";
+const font = "'Josefin Sans', sans-serif";
 const theme = createTheme({
   typography: {
     fontFamily: font,

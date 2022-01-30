@@ -7,7 +7,7 @@ import { Typography } from '@mui/material';
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <Typography variant='h5'> {`Lic. Romina Gambino`} </Typography>
+      <Typography component={'p'}> {`Lic. Romina Gambino`} </Typography>
       <Address />
       <SocialMedia />
     </footer>

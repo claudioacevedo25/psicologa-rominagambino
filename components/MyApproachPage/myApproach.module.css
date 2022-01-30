@@ -1,0 +1,32 @@
+.container {
+    display:block;
+    padding: 5px 0;
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    width: 50vw;
+    border-radius: 2%;
+}
+
+.content {
+    padding: 0 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media(min-width: 700px){
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
