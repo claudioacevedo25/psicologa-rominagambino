@@ -50,6 +50,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="static" style={{backgroundColor: 'rgb(232,46,0)'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          <Tooltip title='Inicio'>
           <Button
             onClick={goHome}
             sx={{display: 'block' }}
@@ -57,6 +58,7 @@ const ResponsiveAppBar = () => {
             <Image src={'/img/goldTree.png'} alt='psicologia' width={50} height={50}  />
 
           </Button>
+          </Tooltip>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -95,14 +97,6 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-            LOGO
-          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, i) => (
               <Button
@@ -116,13 +110,13 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+            {/* <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}> */}
                 <Avatar alt="Romy Sharp" src="/img/romyIcon.png" />
-              </IconButton>
-            </Tooltip>
+              {/* </IconButton>
+            </Tooltip> */}
             <Menu
-              sx={{ mt: '45px' }}
+              sx={{ mt: '45px', display:'none' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{

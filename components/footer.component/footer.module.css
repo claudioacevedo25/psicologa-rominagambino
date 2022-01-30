@@ -3,15 +3,23 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   text-align: center;
-  padding: 12px;
+  padding: 30px;
   background: rgb(255, 0, 0);
   background: linear-gradient(90deg, rgba(255, 0, 0, 0.6404761733795081) 0%, rgba(255, 205, 71, 0.856162447889312) 33%, rgba(255, 236, 204, 0.8813725319229254) 100%);
+}
+
+.container > a:hover {
+  font-weight: 600;
 }
 
 .address {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+
+.address:hover{
+  font-weight: 600;
 }
 
 .address svg {
@@ -25,6 +33,10 @@
 
 .socialMedia svg {
   margin-right: 10px;
+}
+
+.socialMedia svg:hover {
+  height: 20px;;
 }
 
 @media(min-width: 700px) {
