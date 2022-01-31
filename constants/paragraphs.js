@@ -34,3 +34,5 @@ Las sesiones pueden ser semanales o quincenales.
 `;
 
 export const underConstruction = 'PÁGINA EN CONSTRUCCIÓN';
+
+export const test = 'variable of proof'
