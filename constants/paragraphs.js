@@ -1,5 +1,5 @@
 export const home = `
-Querido lector, te doy una calida bienvenida a esta página. 
+Querido lector, te doy una calida bienvenida a esta página.
 La idea es que puedas recorrerla o buscar más información sobre mi forma de trabajo. Además puedas acceder a información de interés, que no reemplaza un proceso psicoterapeútico, pero si puede servir a tu psicoeducación.
 Lo que sea que te trajo hasta acá seguramente este asociado a algo que te movilizó a querer estar mejor o a entender lo que te está pasando y es el inicio de nuevas transformaciones. Como seres humanos estamos en constante transformación y esto es posible, siempre y cuando tomes la decisión de ser un aprendiz activo de tu propia vida, lo cual es fundamental para iniciar y sostener un proceso de psicoterapia. Los cambios son una opción y requieren mucha valentía que decidas realizarlos, por lo que le demos la bienvenida a ese nuevo comenzar.
 `;

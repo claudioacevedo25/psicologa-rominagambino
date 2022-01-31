@@ -2,9 +2,15 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    padding: 15px 15px 0;
 }
 
 .mainContainer {
     display: flex;
+    padding: 10px 0;
+}
+
+@media (min-width: 700px){
+    .container{
+        padding: 15px 15px 0;
+    }
 }
