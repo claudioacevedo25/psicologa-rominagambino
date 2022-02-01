@@ -1,8 +1,16 @@
-export const home = `
-Querido lector, te doy una calida bienvenida a esta página.
-La idea es que puedas recorrerla o buscar más información sobre mi forma de trabajo. Además puedas acceder a información de interés, que no reemplaza un proceso psicoterapeútico, pero si puede servir a tu psicoeducación.
-Lo que sea que te trajo hasta acá seguramente este asociado a algo que te movilizó a querer estar mejor o a entender lo que te está pasando y es el inicio de nuevas transformaciones. Como seres humanos estamos en constante transformación y esto es posible, siempre y cuando tomes la decisión de ser un aprendiz activo de tu propia vida, lo cual es fundamental para iniciar y sostener un proceso de psicoterapia. Los cambios son una opción y requieren mucha valentía que decidas realizarlos, por lo que le demos la bienvenida a ese nuevo comenzar.
-`;
+
+export const defaultMsn = `Estamos trabajando en nuevo contenido, pronto tendra novedades`;
+
+export const home = {
+    card1: ` 
+    Querido lector, te doy una calida bienvenida a esta página.
+    La idea es que puedas recorrerla o buscar más información sobre mi forma de trabajo. Además puedas acceder a información de interés, que no reemplaza un proceso psicoterapeútico, pero si puede servir a tu psicoeducación.
+    `,
+    card2: `
+    Lo que sea que te trajo hasta acá seguramente este asociado a algo que te movilizó a querer estar mejor o a entender lo que te está pasando y es el inicio de nuevas transformaciones. 
+    Como seres humanos estamos en constante transformación y esto es posible, siempre y cuando tomes la decisión de ser un aprendiz activo de tu propia vida, lo cual es fundamental para iniciar y sostener un proceso de psicoterapia. Los cambios son una opción y requieren mucha valentía que decidas realizarlos, por lo que le demos la bienvenida a ese nuevo comenzar.
+    `
+};
 
 export const whoIam = `
 ¿Quién soy?. Es una pregunta amplia. Puedo contarte un poco, pero sobre todo me interesa que sepas que hago. Soy licenciada en psicología, me recibí en la Universidad Nacional de Córdoba. Nací en Río Negro, vine a estudiar y me enamoré de esta hermosa ciudad. 
