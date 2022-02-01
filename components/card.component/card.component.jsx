@@ -9,9 +9,9 @@ import Carousel from '../carousel.component';
 export default function ActionAreaCard({className, openModal}) {
   return (
     <Card className={className} sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      <CardActionArea >
         <Carousel/>
-        <CardContent sx={{backgroundColor:'rgba(255,255,205, 0.4)'}} onClick={openModal}>
+        <CardContent sx={{backgroundColor:'rgba(255,255,205, 0.4)'}} >
           <Typography gutterBottom variant="h5" component="div">
             BIENVENIDOS
           </Typography>
