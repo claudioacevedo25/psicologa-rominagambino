@@ -1,26 +1,30 @@
-import React, {useState} from 'react';
+import React, { useEffect } from 'react';
+import Aos from "aos";
 import { Typography } from '@mui/material';
 import { home } from '../../../constants/paragraphs';
 import Card from '../../card.component';
-import Modal from '../../modal.component';
 import style from '../home.module.css';
+import "aos/dist/aos.css";
 
 const HomePage = () => {
-  const [open, setOpen] =useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   return (
     <div className={style.container}>
       <div className={style.content}>
-        <Card className={style.card} openModal={handleOpen}/>
-        <Modal open={open} handleClose={handleClose}/>
-        <Typography className={style.mainText}>
-          {`${home}`}
-        </Typography>
+        <div data-aos ='fade-down'  className={style.mainCard}>
+          <Card className={style.card} />
+        </div>
+        <div data-aos ='fade-right' className={style.mainText}>
+          <Typography >
+            {`${home}`}
+          </Typography>
+        </div>
+
       </div>
-      <div className={style.videoContainer}>
+
+      <div data-aos ='fade-left' className={style.videoContainer}>
         <video className={style.video} autoPlay loop muted>
           <source src="video/psicoterapia1.mp4" type="video/mp4" />
         </video>
