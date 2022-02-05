@@ -10,7 +10,7 @@ const HomePage = () => {
   useEffect(()=>{
     Aos.init({duration:800})
   },[])
-  return ( 
+  return (
     <div className={style.container}>
       <div className={style.content}>
         <div data-aos ='zoom-out'  className={style.mainCard}>
