@@ -1,31 +1,68 @@
 .container {
-    display:block;
+    display: block;
+    padding: 0 20px 10px 20px;
 }
 
-.videoContainer {
+.videoContainer { 
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .video {
-    width: 50vw;
+    width: 100%;
     border-radius: 2%;
 }
 
 .content {
-    padding: 0 25px;
     display: flex;
-    align-content: center;
-    justify-content: center;
+    flex-direction: column;
     text-align: justify;
-    text-justify: inter-word;
 }
 
-@media(min-width: 700px){
+.mainText{
+    margin: 15px 0 0 0;
+    padding: 10px;
+    background-color: rgba(255,255,235, 1);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    overflow: hidden;
+    max-width: 345px;
+    white-space: pre-line;
+}
+
+.items {
+    padding: 0 10px 0 14px;
+}
+.items > li {
+   margin-top: 10px;
+}
+
+@media(min-width: 700px) {
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
+    .video {
+        width: 50vw;
+        border-radius: 2%;
+    }
+    .card {
+        display: none;
+    }
+    .content {
+        padding: 0 15px;
+        display: flex;
+    }
+    .mainText{
+        padding: 15px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+   .mainText {
+   }
 }
