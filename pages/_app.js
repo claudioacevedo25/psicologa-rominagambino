@@ -7,6 +7,13 @@ const font = "'Josefin Sans', sans-serif";
 const theme = createTheme({
   typography: {
     fontFamily: font,
+  },
+  palette: {
+    primary: {
+      dark: '#C15A26',
+      main: '#C15A26',
+      light: '#C15A26',
+    },
   }
 })
 
