@@ -5,11 +5,11 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Carousel from '../carousel.component';
 
-export default function ActionAreaCard({className}) {
+export default function ActionAreaCard({className, images}) {
   return (
     <Card className={className} sx={{ maxWidth: 345 }}>
       <CardActionArea data-aos ='fade-up-right'>
-        <Carousel />
+        <Carousel images={images} />
         <CardContent data-aos ='zoom-in' sx={{backgroundColor:'rgba(255,255,205, 0.4)'}} >
           <Typography gutterBottom variant="h5" component="div">
             BIENVENIDOS
