@@ -1,0 +1,1 @@
+export { CustomizedSnackbars as default} from './snackbar.component';
