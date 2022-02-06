@@ -1,6 +1,27 @@
 .container {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding:10px;
+}
+
+.socialMedia {
+    background-color: rgba(193, 90, 38, 0.9);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+@media(min-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialMedia {
+        padding: 15px;
+        min-width: 752px;
+    }
+
+
 }

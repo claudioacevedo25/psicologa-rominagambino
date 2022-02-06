@@ -6,7 +6,7 @@ import emailjs from 'emailjs-com';
 import style from './contactForm.module.css';
 
 export const ContactForm = () => {
-   
+
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm(
@@ -17,30 +17,35 @@ export const ContactForm = () => {
             .then(res => {
                 console.log('res:', res)
             })
-            .catch( error => console.log(error));
+            .catch(error => console.log(error));
     }
     return (
         <div className={style.form}>
             <form onSubmit={sendEmail}>
                 <TextField
+                    required
                     name="name"
                     type="text"
                     label="Nombre"
                     variant="outlined"
                 />
                 <TextField
+                    required
                     name="email"
                     type="email"
                     label="Email"
                     variant="outlined"
                 />
                 <TextField
+                    required
                     name="message"
                     type="text"
                     label="Dejame tu consulta"
                     variant="outlined"
                     multiline
-                    rows={10}
+                    rows={7}
+                    maxRows={7}
+                    minRows={1}
                 />
                 <div>
                     <Button type="submit" variant="contained" color="primary">
