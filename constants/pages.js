@@ -7,10 +7,10 @@ export const pages = [
         name: 'Mi abordaje',
         url: 'mi-abordaje',
     },
-    {
-        name: 'Psicodatos',
-        url: 'psicodatos',
-    },
+    // {
+    //     name: 'Psicodatos',
+    //     url: 'psicodatos',
+    // },
     {
         name: 'Modalidad de Atención',
         url: 'modalidad-atencion',
@@ -18,5 +18,9 @@ export const pages = [
     {
         name: 'Contacto',
         url: 'contacto',
+    },
+    {
+        name: 'Turnos',
+        url: 'turnos',
     },
 ];

@@ -69,14 +69,10 @@ export const atention = {
             item: `Las sesiones las estoy haciendo tanto en modalidad presencial como online (dependiendo disponibilidad).`
         },
         {
-            item: `Trabajo de manera particular y por obra social (próximamente).`
-        },
-        {
-           item: `De modo particular mis honorarios son $1.800 por sesión de acuerdo a nuevo monto mínimo ético actualizado por Colegio de Psicólogos.`
+            item: `Trabajo de manera particular y por obra social (consultar).`
         },
         {
            item: `Las cancelaciones de las sesiones y reprogramaciones, se realizan con 24hs de antelación, de lo contrario se deberá abonar el valor total de la sesión (exceptuando emergencias/urgencias).`
-    
         },
         {
             item: `Las sesiones pueden ser semanales o quincenales.`
