@@ -1,21 +1,22 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { pages } from '../../constants/pages';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import MenuItem from "@mui/material/MenuItem";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { pages } from "../../constants/pages";
+import styles from "./appbar.module.css";
 
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,28 +39,24 @@ const ResponsiveAppBar = () => {
   };
 
   const onPageChange = (href) => {
-    router.push(href)
+    router.push(href);
     setAnchorElNav(null);
-  }
+  };
 
   const goHome = () => {
-    router.push('/');
-  }
+    router.push("/");
+  };
 
   return (
-    <AppBar position="static" style={{backgroundColor: '#C15A26'}}>
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Tooltip title='Inicio'>
-          <Button
-            onClick={goHome}
-            sx={{display: 'block' }}
-          >
-            <Image src={'/img/goldTree.png'} alt='psicologia' width={50} height={50}  />
-
-          </Button>
+          <Tooltip title="Inicio">
+            <Typography onClick={goHome} className={styles.title}>
+              SESIONES DE PSICOLOGÍA
+            </Typography>
           </Tooltip>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -74,22 +71,23 @@ const ResponsiveAppBar = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page, i) => (
-                <MenuItem key={page.name}
+              {pages.map((page) => (
+                <MenuItem
+                  key={page.name}
                   onClick={() => onPageChange(page.url)}
                 >
                   <Typography textAlign="center">{page.name}</Typography>
@@ -97,14 +95,16 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page, i) => (
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            {pages.map((page) => (
               <Button
                 key={page.name}
                 onClick={() => onPageChange(page.url)}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: "#5a85a9", display: "block" }}
               >
-                <Typography variant='body1'>{page.name}</Typography>
+                <Typography variant="body1" className={styles.navbarPages}>
+                  {page.name}
+                </Typography>
               </Button>
             ))}
           </Box>
@@ -112,21 +112,25 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             {/* <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}> */}
-                <Avatar alt="Romy Sharp" src="/img/romyIcon.png" />
-              {/* </IconButton>
+            <Avatar
+              alt="Romy Sharp"
+              src="/img/logoRomi.jpeg"
+              sx={{ width: 56, height: 56 }}
+            />
+            {/* </IconButton>
             </Tooltip> */}
             <Menu
-              sx={{ mt: '45px', display:'none' }}
+              sx={{ mt: "45px", display: "none" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                vertical: "top",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                vertical: "top",
+                horizontal: "right",
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}

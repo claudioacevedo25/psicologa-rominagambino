@@ -1,0 +1,13 @@
+.title {
+  color: #455765;
+  padding-right: 8px;
+}
+
+.title:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbarPages:hover {
+  font-weight: 600;
+}

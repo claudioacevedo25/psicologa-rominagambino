@@ -1,15 +1,17 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   text-align: center;
   padding: 30px;
-  background-color: #87542A;
+  background: rgb(177, 207, 235);
+  background: linear-gradient(
+    0deg,
+    rgba(177, 207, 235, 1) 0%,
+    rgba(150, 196, 196, 1) 78%
+  );
   color: white;
-}
-
-.container>p:hover {
-  font-weight: 600;
 }
 
 .address {
@@ -18,10 +20,9 @@
   justify-content: center;
 }
 
-.address>p:hover {
-  font-weight: 600;
+.address > p:hover {
+  color: #455765;
 }
-
 
 .socialMedia {
   display: flex;
@@ -30,18 +31,18 @@
 
 .socialMedia svg {
   margin-right: 10px;
+  width: 55px;
+  height: 55px;
 }
 
 .socialMedia svg:hover {
-  height: 20px;
-  ;
+  color: #455765;
 }
 
-@media(min-width: 700px) {
+@media (min-width: 700px) {
   .container {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-content: center;
   }
-
 }

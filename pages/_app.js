@@ -1,7 +1,6 @@
-
 import { createTheme, ThemeProvider } from "@mui/material";
 import DefaultLayout from "../components/defaultLayout.component";
-import '../styles/globals.css';
+import "../styles/globals.css";
 
 const font = "'Josefin Sans', sans-serif";
 const theme = createTheme({
@@ -10,12 +9,12 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      dark: '#C15A26',
-      main: '#C15A26',
-      light: '#C15A26',
+      dark: "#bfbbcb",
+      main: "#e4fbfb", // color del navbar
+      light: "#bfbbcb",
     },
-  }
-})
+  },
+});
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -24,8 +23,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </DefaultLayout>
     </ThemeProvider>
-
   );
-};
+}
 
-export default MyApp
+export default MyApp;

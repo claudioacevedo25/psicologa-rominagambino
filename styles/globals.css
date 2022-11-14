@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dongle:wght@300&family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Dongle:wght@300&family=Josefin+Sans&display=swap");
 
-html {}
+html {
+}
 
 body {
   min-height: 100%;
   margin: 0;
-  background-color: #FFFFCD;
+  background: rgb(177, 207, 235);
+  background: linear-gradient(
+    0deg,
+    rgba(177, 207, 235, 1) 0%,
+    rgba(215, 222, 241, 1) 78%
+  );
 }
 
 a {

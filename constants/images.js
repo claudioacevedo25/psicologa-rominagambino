@@ -1,50 +1,45 @@
 export const homeImages = [
-    {
-      label: 'Regalate un abrazo',
-      imgPath:'/img/homePage/6.png',
-    },
-    {
-      label: 'empatia',
-      imgPath: '/img/homePage/7.png',
-    },
-    {
-      label: 'Otra imagen ',
-      imgPath: '/img/homePage/8.png',
-    },
-    {
-      label: 'Algo que podemos hacer',
-      imgPath: '/img/homePage/9.png',
-    },
-    {
-      label: 'Algo que podemos hacer',
-      imgPath: '/img/homePage/10.png',
-    },
-    {
-      label: 'Algo que podemos hacer',
-      imgPath: '/img/homePage/11.png',
-    },
-  ];
+  {
+    label: "Regalate un abrazo",
+    imgPath: "/img/homePage/phrase1.jpeg",
+  },
+  {
+    label: "empatia",
+    imgPath: "/img/homePage/phrase2.jpeg",
+  },
+  {
+    label: "Otra imagen ",
+    imgPath: "/img/homePage/phrase3.jpeg",
+  },
+  {
+    label: "Algo que podemos hacer",
+    imgPath: "/img/homePage/phrase4.jpeg",
+  },
+  {
+    label: "Success",
+    imgPath: "/img/homePage/phrase5.jpeg",
+  },
+  {
+    label: "Success_2",
+    imgPath: "/img/homePage/phrase6.jpeg",
+  },
+];
 
-
-  export const profileImage = [
-    {
-      label: 'Regalate un abrazo',
-      imgPath:'/img/profilePage/1.png',
-    },
-    {
-      label: 'empatia',
-      imgPath: '/img/profilePage/2.png',
-    },
-    {
-      label: 'Otra imagen ',
-      imgPath: '/img/profilePage/3.png',
-    },
-    {
-      label: 'Algo que podemos hacer',
-      imgPath: '/img/profilePage/4.png',
-    },
-    {
-      label: 'Algo que podemos hacer',
-      imgPath: '/img/profilePage/5.png',
-    },
-  ];
+export const profileImage = [
+  {
+    label: "Hola",
+    imgPath: "/img/profilePage/Hello.jpeg",
+  },
+  {
+    label: "intereses",
+    imgPath: "/img/profilePage/interesting.jpeg",
+  },
+  {
+    label: "Futuro",
+    imgPath: "/img/profilePage/future.jpeg",
+  },
+  {
+    label: "studios",
+    imgPath: "/img/profilePage/study.jpeg",
+  },
+];
