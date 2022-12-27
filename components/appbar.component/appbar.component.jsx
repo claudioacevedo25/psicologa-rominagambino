@@ -121,7 +121,7 @@ const ResponsiveAppBar = () => {
             </Tooltip> */}
             <Menu
               sx={{ mt: "45px", display: "none" }}
-              id="menu-appbar"
+              id="menu-appbar-user"
               anchorEl={anchorElUser}
               anchorOrigin={{
                 vertical: "top",

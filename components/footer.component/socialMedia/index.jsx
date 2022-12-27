@@ -35,7 +35,7 @@ const SocialMedia = () => {
       {socialContacts.map(({ key, icon: Icon, href }) => {
         return (
           <Link key={key} href={href}>
-            <a target="_blank">
+            <a target="_blank" aria-label={`Logo ${key}`}>
               <Icon />
             </a>
           </Link>

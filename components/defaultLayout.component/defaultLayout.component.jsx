@@ -16,7 +16,7 @@ const DefaultLayout = ({ children }) => {
         <meta name="author" content="maximiliano pezzotta 3513390267" />
         <meta
           name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
         />
         <title>Psicóloga - Romina Gambino</title>
       </Head>
