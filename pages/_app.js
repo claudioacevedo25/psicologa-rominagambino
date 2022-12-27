@@ -1,4 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material";
+import { Analytics } from "@vercel/analytics/react";
 import DefaultLayout from "../components/defaultLayout.component";
 import "../styles/globals.css";
 
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <DefaultLayout>
         <Component {...pageProps} />
+        <Analytics />
       </DefaultLayout>
     </ThemeProvider>
   );
