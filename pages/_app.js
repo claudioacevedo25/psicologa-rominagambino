@@ -6,7 +6,6 @@ import DefaultLayout from "../components/defaultLayout.component";
 import Box from "@mui/material/Box";
 import "../styles/globals.css";
 import Script from "next/script";
-import { Html, Head, Main, NextScript } from "next/document";
 
 const Spinner = () => {
   return (
@@ -61,21 +60,20 @@ function MyApp({ Component, pageProps }) {
   if (!showChild || typeof window === "undefined") return null;
   return (
     <>
-      <Head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-249381722-1"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-249381722-1"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
            window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
            gtag('js', new Date());
          
            gtag('config', 'UA-249381722-1');
         `}
-        </Script>
-      </Head>
+      </Script>
+
       <ThemeProvider theme={theme}>
         <DefaultLayout>
           {isLoading ? <Spinner /> : <Component {...pageProps} />}
