@@ -19,9 +19,6 @@ export default function ActionAreaCard({ className, images }) {
           <Typography gutterBottom variant="h5" component="div">
             BIENVENIDOS
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Querido lector, te doy una calida bienvenida...(más)
-          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
