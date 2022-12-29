@@ -11,7 +11,7 @@ const AtentionPage = () => {
   return (
     <div className={style.container}>
       <div data-aos="zoom-in-left" className={style.videoContainer}>
-        <video className={style.video} autoPlay loop muted>
+        <video className={style.video} autoPlay loop muted playsInline>
           <source src="video/psicoterapia5.mp4" type="video/mp4" />
         </video>
       </div>
