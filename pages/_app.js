@@ -6,21 +6,7 @@ import DefaultLayout from "../components/defaultLayout.component";
 import Box from "@mui/material/Box";
 import "../styles/globals.css";
 import Script from "next/script";
-
-const Spinner = () => {
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        width: "100%",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <CircularProgress color="info" size={70} />
-    </Box>
-  );
-};
+import { Spinner } from "../components/spinner";
 
 const font = "'Josefin Sans', sans-serif";
 const theme = createTheme({
@@ -38,13 +24,16 @@ const theme = createTheme({
 
 function MyApp({ Component, pageProps }) {
   const [showChild, setShowChild] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const start = () => setIsLoading(true);
   const complete = () => setIsLoading(false);
 
   useEffect(() => {
     setShowChild(true);
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
 
     Router.events.on("routeChangeStart", start);
     Router.events.on("routeChangeComplete", complete);
@@ -54,10 +43,12 @@ function MyApp({ Component, pageProps }) {
       Router.events.off("routeChangeStart", start);
       Router.events.off("routeChangeComplete", complete);
       Router.events.off("routeChangeError", complete);
+      clearTimeout(timer);
     };
   }, []);
 
   if (!showChild || typeof window === "undefined") return null;
+  if (isLoading) return <Spinner />;
   return (
     <>
       <Script
@@ -76,7 +67,7 @@ function MyApp({ Component, pageProps }) {
 
       <ThemeProvider theme={theme}>
         <DefaultLayout>
-          {isLoading ? <Spinner /> : <Component {...pageProps} />}
+          <Component {...pageProps} />
           <Analytics />
         </DefaultLayout>
       </ThemeProvider>
